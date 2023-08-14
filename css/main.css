@@ -303,7 +303,7 @@ footer .footer_icons .fa-brands {
         width: 100%;
         background: #fff;
         display: flex;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         padding: 10px 5px;
@@ -323,7 +323,7 @@ footer .footer_icons .fa-brands {
         margin-right: 5px;
     }
     header a {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         font-weight: 400;
         letter-spacing: 0px;
         padding-left: 15px;
