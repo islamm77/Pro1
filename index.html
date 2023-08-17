@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- google font Merriweather  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
     <!-- normalize reset  -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -26,15 +26,23 @@
 
 <body>
     <header>
-        <a class="logo" href="#">Islam</a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Products">Products</a>
-            <a href="#Contact">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>islam</h1>
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <section class="main">
+    <section class="main" id="Home">
         <div class="content">
             <h2>Hello, I'am Islam Mustafa <br><span>Content Creator</span> </h2>
             <h3>HTML & CSS</h3>
@@ -86,7 +94,7 @@
     </section>
     <footer id="footer">
         <p>Copyright@<span>Islam Mustafa</span></p>
-        <div class = "footer_icons">
+        <div class="footer_icons">
             <a href="#footer"><i class="fa-brands fa-facebook"></i></a>
             <a href="#footer"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="#footer"><i class="fa-brands fa-linkedin"></i></a>
