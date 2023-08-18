@@ -9,16 +9,42 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-/* Start header part */
+.container {
+    padding: 15px;
+    margin: 0px auto;
+}
 
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+    .main {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Start header part */
 header {
-    background: #fff;
-    padding: 0px 20px;
     position: fixed;
     z-index: 999;
+    background: #fff;
     width: 100%;
     border-bottom: 1px solid;
     box-shadow: 0px 5px 10px 2px;
+    padding: 0px 20px;
 }
 
 header .container {
@@ -27,6 +53,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 header .container h1 {
@@ -35,7 +62,6 @@ header .container h1 {
     letter-spacing: 2px;
     margin: 5px;
 }
-
 
 header .container .links {
     position: relative;
@@ -97,54 +123,52 @@ header .container .links ul a:hover {
 
 }
 
-
-
 /* End header part */
 /* Start main Section Part */
 .main {
     width: 100%;
-    min-height: calc(100vh);
+    min-height: 100vh;
     background: url("../img/main_sec_background.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
 }
 
-.main .content {
+.main .container {
     background: rgba(255, 255, 255, 0.5);
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 20px;
-    position: absolute;
-    top: auto;
-    left: auto;
+    max-width: 600px;
+
 }
 
-.main .content h2 {
-    font-size: 2rem;
+.main .container h2 {
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: black;
 }
 
-.main .content span {
+.main .container span {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 3px;
     color: rgb(21, 21, 95);
     margin-top: 20px;
 }
 
-.main .content h3 {
+.main .container h3 {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.main .content .Pro_but {
+.main .container .Pro_but {
     display: inline-block;
     background: rgb(22, 22, 219);
     font-size: 1.2rem;
@@ -157,19 +181,19 @@ header .container .links ul a:hover {
     transition: 0.7s ease;
 }
 
-.main .content .Pro_but:hover {
+.main .container .Pro_but:hover {
     transform: scale(1.1);
     background: rgb(4, 4, 114);
 }
 
-.main .content .Spcial_Icons .fa-brands {
+.main .container .Spcial_Icons .fa-brands {
     font-size: 1.5rem;
-    color:black;
+    color: black;
     padding: 10px;
     transition: 0.7s ease;
 }
 
-.main .content .Spcial_Icons .fa-brands:hover {
+.main .container .Spcial_Icons .fa-brands:hover {
     color: blue;
     transform: scale(1.5);
 }
@@ -213,11 +237,21 @@ header .container .links ul a:hover {
     flex-wrap: wrap;
 }
 
+.Skills .cards .card h3 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
+.Skills .cards .card h3 a:hover {
+    color: rgb(76, 0, 255);
+}
+
 .Skills .cards .card:hover {
     transform: scale(1.1);
     box-shadow: 20px 20px gray;
     border: 1px solid rgb(223, 220, 220);
-    cursor: pointer;
+
 }
 
 .Skills .cards .card .fa-solid {
@@ -299,22 +333,24 @@ header .container .links ul a:hover {
 }
 
 .Contact .cards .card p {
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: black;
 }
 
 /* End Contact part */
 /* Start footer part  */
 footer {
     background: black;
-    padding: 20px 200px;
     color: #fff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 footer p {
-    font-size: 1.5em;
+    font-size: 0.8em;
 }
 
 footer span {
@@ -323,127 +359,8 @@ footer span {
 
 footer .footer_icons .fa-brands {
     color: #fff;
-    font-size: 1em;
-    padding: 0px 10px;
+    font-size: 0.8em;
+    padding: 0px 5px;
 }
 
 /* End footer part  */
-/* start media responsive  */
-/* Mobile  */
-@media (max-width:768px) {
-
-    /* start main section  */
-    .main {
-        padding: 70px 10px;
-    }
-
-    .main .content h2 {
-        font-size: 1.2rem;
-    }
-
-    .main .content span {
-        font-size: 2rem;
-    }
-
-    .main .content h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        letter-spacing: 0px;
-    }
-
-    .Contact .cards .card p {
-        font-size: 0.7rem;
-        font-weight: 200;
-        letter-spacing: 0px;
-    }
-
-    /* end main section  */
-    /* start footer  */
-    footer {
-        padding: 20px 10px;
-    }
-
-    footer p {
-        font-size: 0.5em;
-    }
-
-    footer .footer_icons .fa-brands {
-        color: #fff;
-        font-size: 0.8em;
-        padding: 0px 5px;
-    }
-
-    /* end footer  */
-}
-
-/* Small screen  */
-@media (min-width:768px) {
-    */
-
-    /* start main section  */
-    .main {
-        padding: 70px 50px;
-    }
-
-    .main .content h2 {
-        font-size: 1.8rem;
-    }
-
-    .main .content span {
-        font-size: 3rem;
-    }
-
-    .main .content h3 {
-        font-size: 1.8rem;
-        font-weight: 600;
-        letter-spacing: 0px;
-    }
-}
-
-/* Medium screen  */
-@media (min-width:992px) {
-
-    /* start main section  */
-    .main {
-        padding-left: 100px;
-    }
-
-    .main .content h2 {
-        font-size: 2.2rem;
-    }
-
-    .main .content span {
-        font-size: 4rem;
-    }
-
-    .main .content h3 {
-        font-size: 2rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-}
-
-/* larg screen  */
-@media (min-width:1200px) {
-
-    /* start main section  */
-    .main {
-        padding-left: 100px;
-    }
-
-    .main .content h2 {
-        font-size: 2.2rem;
-    }
-
-    .main .content span {
-        font-size: 4rem;
-    }
-
-    .main .content h3 {
-        font-size: 2rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-}
-
-/* end media responsive  */
